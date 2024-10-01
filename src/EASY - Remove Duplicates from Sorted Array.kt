@@ -47,26 +47,19 @@ nums is sorted in non-decreasing order.
 
  */
 fun main(){
-    val integerArray = intArrayOf(1,2,3,5,6,1,2,3)
+    val integerArray = intArrayOf(0,0,1,1,1,2,2,3,3,4)
     removeDuplicatesFromSortedArray(integerArray)
 }
 
-fun removeDuplicatesFromSortedArray(integerArray: IntArray) {
-    val sortedArray = integerArray.sortedArray()
-    var uniqueIndex = 0
-    for (i in 1 ..< sortedArray.size){
-       if (sortedArray[i] != sortedArray[uniqueIndex]){
-           uniqueIndex++
-           sortedArray[uniqueIndex] = sortedArray[i]
-       }
-
+fun removeDuplicatesFromSortedArray(nums: IntArray) : Int{
+    if (nums.isEmpty()) return 0
+    var uniqueIndex = 1
+    for (i in 1 until nums.size){
+        if (nums[i] != nums[i-1]){
+            uniqueIndex++
+            nums[uniqueIndex] = nums[i]
+        }
     }
 
-    println(sortedArray)
-
-    for (i in 0..uniqueIndex) {
-        print("${sortedArray[i]}")
-    }
-
-
+    return uniqueIndex
 }
