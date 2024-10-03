@@ -1,4 +1,4 @@
-fun main(){
+fun main() {
 
     //easy level question : Find the index of the first occurrence in a string
 

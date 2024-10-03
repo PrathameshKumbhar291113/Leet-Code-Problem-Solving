@@ -46,16 +46,16 @@ Constraints:
 nums is sorted in non-decreasing order.
 
  */
-fun main(){
-    val integerArray = intArrayOf(0,0,1,1,1,2,2,3,3,4)
+fun main() {
+    val integerArray = intArrayOf(0, 0, 1, 1, 1, 2, 2, 3, 3, 4)
     removeDuplicatesFromSortedArray(integerArray)
 }
 
-fun removeDuplicatesFromSortedArray(nums: IntArray) : Int{
+fun removeDuplicatesFromSortedArray(nums: IntArray): Int {
     if (nums.isEmpty()) return 0
     var uniqueIndex = 1
-    for (i in 1 until nums.size){
-        if (nums[i] != nums[i-1]){
+    for (i in 1 until nums.size) {
+        if (nums[i] != nums[i - 1]) {
             uniqueIndex++
             nums[uniqueIndex] = nums[i]
         }

@@ -51,8 +51,8 @@ Constraints:
 
  */
 
-fun main(){
-    val nums = intArrayOf(0,1,2,2,3,0,4,2)
+fun main() {
+    val nums = intArrayOf(0, 1, 2, 2, 3, 0, 4, 2)
     val `val` = 2
     removeElement(nums, `val`)
 }
@@ -60,9 +60,9 @@ fun main(){
 fun removeElement(nums: IntArray, `val`: Int): Int {
     if (nums.isEmpty()) return 0
     var counter = 0
-    for (i in 0 until nums.size){
-        if (nums[i] != `val`){
-         nums[counter] = nums[i]
+    for (i in 0 until nums.size) {
+        if (nums[i] != `val`) {
+            nums[counter] = nums[i]
             println(i)
             counter++
         }
