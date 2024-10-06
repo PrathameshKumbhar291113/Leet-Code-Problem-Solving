@@ -1,4 +1,4 @@
-/*
+package easy/*
 
 242. Valid Anagram
 

@@ -1,4 +1,4 @@
-/*
+package easy/*
 
 217. Contains Duplicate
 

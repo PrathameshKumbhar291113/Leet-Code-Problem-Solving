@@ -1,4 +1,4 @@
-/*
+package easy/*
 
 1. Two Sum
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -37,7 +37,7 @@ fun main() {
     var array = intArrayOf(1,2,3,1,3)
     val target = 6
 
-    twoSum(array, target).forEach {index ->
+    twoSum(array, target).forEach { index ->
         println(array[index])
     }
 }

@@ -1,4 +1,4 @@
-/*
+package easy/*
 
 EASY - Remove Duplicates from Sorted Array
 

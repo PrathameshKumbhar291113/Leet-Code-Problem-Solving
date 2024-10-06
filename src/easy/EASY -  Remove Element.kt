@@ -1,4 +1,4 @@
-/*
+package easy/*
 
 27. Remove Element
 

@@ -1,4 +1,4 @@
-/*
+package easy/*
 
 88. Merge Sorted Array
 
