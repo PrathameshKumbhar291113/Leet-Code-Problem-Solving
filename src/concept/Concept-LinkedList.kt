@@ -1,8 +1,8 @@
 package concept
 
 class LinkList {
-    var head: Node? = null
-    var linkListSize = 0
+    private var head: Node? = null
+    private var linkListSize = 0
 
     init {
         linkListSize = 0
@@ -17,7 +17,7 @@ class LinkList {
 
     //add first or last (if ask in question by default solve for add last)
     fun addFirst(data: String) {
-        var newNode = Node(data)
+        val newNode = Node(data)
         if (head == null) {
             head = newNode
             return
@@ -27,7 +27,7 @@ class LinkList {
     }
 
     fun addLast(data: String) {
-        var newNode = Node(data)
+        val newNode = Node(data)
         if (head == null) {
             head = newNode
             return
@@ -93,7 +93,7 @@ class LinkList {
 }
 
 fun main() {
-    var linkList = LinkList()
+    val linkList = LinkList()
     linkList.addFirst("1")
     linkList.addLast("4")
     linkList.addLast("3")
